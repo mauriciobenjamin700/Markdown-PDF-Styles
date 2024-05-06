@@ -26,3 +26,11 @@ p {
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
+
+/* Definir margens */
+body {
+    margin-top: 2cm; /* Margem superior de 2cm */
+    margin-bottom: 2cm; /* Margem inferior de 2cm */
+    margin-left: 2cm; /* Margem esquerda de 2cm */
+    margin-right: 2cm; /* Margem direita de 2cm */
+}
