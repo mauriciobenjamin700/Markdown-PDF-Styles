@@ -1,36 +1,88 @@
-/* Centralizar imagens e limitar a largura para caber na página */
+/* Estilo base */
+body {
+    font-family: serif; /* Fonte serifada genérica */
+    font-size: 12pt; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin: 2cm; /* Margens padrão */
+}
+
+/* Títulos */
+h1 {
+    font-size: 24pt; /* Tamanho da fonte para Título 1 */
+    font-weight: bold; /* Negrito para Título 1 */
+    margin-top: 2cm; /* Margem superior para Título 1 */
+    page-break-before: always; /* Iniciar nova página antes de Título 1 */
+}
+
+h2 {
+    font-size: 18pt; /* Tamanho da fonte para Título 2 */
+    font-weight: bold; /* Negrito para Título 2 */
+    margin-top: 1.5cm; /* Margem superior para Título 2 */
+}
+
+h3 {
+    font-size: 14pt; /* Tamanho da fonte para Título 3 */
+    font-weight: bold; /* Negrito para Título 3 */
+    margin-top: 1.25cm; /* Margem superior para Título 3 */
+}
+
+/* Parágrafos */
+p {
+    text-align: justify; /* Justificar o texto */
+    margin-bottom: 0.5cm; /* Margem inferior para Parágrafos */
+}
+
+/* Lista não ordenada */
+ul {
+    margin-bottom: 0.5cm; /* Margem inferior para Listas não ordenadas */
+}
+
+/* Lista ordenada */
+ol {
+    margin-bottom: 0.5cm; /* Margem inferior para Listas ordenadas */
+}
+
+/* Item de Lista */
+li {
+    text-align: justify;
+    margin-bottom: 0.25cm; /* Margem inferior para Itens de Lista */
+}
+
+/* Nota de Rodapé */
+.footnote {
+    font-size: 10pt; /* Tamanho da fonte para Notas de Rodapé */
+    margin-top: 0.5cm; /* Margem superior para Notas de Rodapé */
+}
+
+/* Centralizar Imagens */
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%; /* Largura máxima de 100% da largura da página */
-    height: auto; /* Altura ajustada automaticamente para manter a proporção original */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Definir a fonte como Times New Roman */
-body {
-    font-family: "Times New Roman", Times, serif;
+/* Tabelas */
+table {
+    width: 100%; /* Largura total da página para Tabelas */
+    border-collapse: collapse; /* Colapso de borda */
+    margin-bottom: 0.5cm; /* Margem inferior para Tabelas */
 }
 
-/* Definir o tamanho da fonte como 12 */
-body {
-    font-size: 12pt;
+th, td {
+    border: 1px solid black; /* Borda de 1px sólida */
+    padding: 0.25cm; /* Espaçamento interno */
 }
 
-/* Justificar todo o texto */
-p {
-    text-align: justify;
+/* Cabeçalho de Tabela */
+th {
+    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+    font-weight: bold; /* Negrito */
+    text-align: center; /* Centralizar texto */
 }
 
-/* Centralizar títulos */
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-}
-
-/* Definir margens */
-body {
-    margin-top: 2cm; /* Margem superior de 2cm */
-    margin-bottom: 2cm; /* Margem inferior de 2cm */
-    margin-left: 2cm; /* Margem esquerda de 2cm */
-    margin-right: 2cm; /* Margem direita de 2cm */
+/* Rodapé de Tabela */
+tfoot {
+    font-weight: bold; /* Negrito */
 }

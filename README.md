@@ -17,22 +17,20 @@ Antes de começar, certifique-se de ter a extensão Markdown PDF instalada no Vi
 Agora, vamos adicionar as configurações necessárias ao arquivo `settings.json`.
 
 ```json
-{
-    "markdown-pdf.styles": [
-        "https://caminho/para/seu/arquivo/estilo.css"
+  "markdown-pdf.scale": 1,
+  "markdown-pdf.styles": [
+      "caminho-para-seu-arquivo-style.css"  
     ],
-    "markdown-pdf.includeDefaultStyles": false,
-    "markdown-pdf.margin.top": "2cm",
-    "markdown-pdf.margin.bottom": "2cm",
-    "markdown-pdf.margin.left": "2cm",
-    "markdown-pdf.margin.right": "2cm",
-    "markdown-pdf.scale": 1,
-    "markdown-pdf.width": "210mm",
-    "markdown-pdf.height": "297mm"
-}
+  "markdown-pdf.includeDefaultStyles": false,
+  "markdown-pdf.width": "210mm",
+  "markdown-pdf.height": "297mm",
+  "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm;\"> </div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; \"",
+  "workbench.settings.applyToAllProfiles": [
+    "markdown-pdf.headerTemplate"
+  ],
 ```
 
-Certifique-se de substituir `"https://caminho/para/seu/arquivo/estilo.css"` pelo URL real do seu arquivo CSS hospedado online.
+Certifique-se de substituir `"https://caminho/para/seu/arquivo/estilo.css"` pelo URL real do seu arquivo CSS.
 
 ## Passo 4: Gerando o PDF
 
@@ -44,3 +42,5 @@ Após salvar as configurações no arquivo `settings.json`, você pode gerar o P
 4. O PDF será gerado e salvo automaticamente no mesmo diretório do arquivo Markdown, a menos que você tenha especificado um diretório de saída diferente nas configurações.
 
 Parabéns! Agora você configurou com sucesso o arquivo `settings.json` do VS Code para chamar um arquivo de estilo externo e gerar PDFs formatados de seus documentos Markdown.
+
+Vale ressaltar que na pasta [Styles](/Styles/) estão guardados todos os templates que criarei a medida que surgir a necessidade, caso queria criar seus templates e contribuir, estou aberto a receber ajuda!
